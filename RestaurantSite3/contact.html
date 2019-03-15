@@ -1,0 +1,126 @@
+<html>
+<head>    
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="jumbotron bg-success text-center">
+        <h1>We're opening a new location!</h1>
+    </div>
+    <div id="header">
+        <h1 class="text-center">Sol Train's</h1>
+        <hr />
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"><ion-icon name="home"></ion-icon></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+        <hr />
+        <noscript>
+            <h3 class="bg-danger text-center py-5">Our site is designed with JavaScript. Please enable JavaScript to view the site as designed.</h3>
+        </noscript>
+    </div>
+    <div class="bg-dark text-white py-5">
+        <div class="col-10 mx-auto">
+            <div class="form-group">
+                <label class="col-5 text-right font-weight-bold" for="name">Name:</label>
+                <input class="col-lg-4 col-6 form-control d-inline-block" type="text" name="name" id="name">
+                <div class="d-lg-inline d-md-block d-sm-block text-center">
+                    <span id="name_err" class="text-danger small"></span>
+                    <span id="name_success" class="text-success small"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-5 text-right font-weight-bold" for="email">Email:</label>
+                <input class="col-lg-4 col-6 form-control d-inline-block" type="text" name="email" id="email">
+                <div class="d-lg-inline d-md-block d-sm-block text-center">
+                    <span id="email_err" class="text-danger small"></span>
+                    <span id="email_success" class="text-success small"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-5 text-right font-weight-bold" for="phone">Phone:</label>
+                <input class="col-lg-4 col-6 form-control d-inline-block" type="text" name="phone" id="phone">
+                <div class="d-lg-inline d-md-block d-sm-block text-center">
+                    <span id="phone_err" class="text-danger small"></span>
+                    <span id="phone_success" class="text-success small"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-5 text-right font-weight-bold" for="reason">Reason for Inquiry:</label>
+                <select class="col-lg-4 col-6 form-control d-inline-block" name="reason" id="reason">
+                    <option value="">----</option>
+                    <option value="catering">Catering</option>
+                    <option value="privateparty">Private Party</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select>
+                <div class="d-lg-inline d-md-block d-sm-block text-center">
+                    <span id="reason_err" class="text-danger small"></span>
+                    <span id="reason_success" class="text-success small"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-5 text-right align-top font-weight-normal" for="comment">Additional Information:</label>
+                <textarea class="col-lg-4 col-6 form-control d-inline-block" name="comment" rows="8"></textarea>
+            </div>
+            <div class="form-group">
+                <label class="d-inline-block col-5 text-right col-form-label" for="visit">Have you been to the restaurant?</label>
+                <div class="d-inline-block col-6">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="No" name="No" value="No">
+                        <label class="form-check-label" for="No">No</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Yes" value="Yes">
+                        <label class="form-check-label" for="Yes">Yes</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="d-inline-block col-5 text-right col-form-label">Best Day to Contact:</label>
+                <div class="d-inline-block col-6">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="monday" type="checkbox" name="day" value="monday">
+                        <label class="form-check-label" for="monday">M</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="tuesday" type="checkbox" name="day" value="tuesday">
+                        <label class="form-check-label" for="tuesday">T</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="wednesday" type="checkbox" name="day" value="wednesday">
+                        <label class="form-check-label" for="wednesday">W</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="thursday" type="checkbox" name="day" value="thursday">
+                        <label class="form-check-label" for="thursday">Th</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="friday" type="checkbox" name="day" value="friday">
+                        <label class="form-check-label" for="friday">F</label>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-success d-block mx-auto" onclick="validator()">Send Request</button>
+        </div>
+    </div>
+    <hr />
+    <div id="footer" class="text-center">
+        <p>500 S Ervay Street, Dallas, TX, 75201</p>
+        <p>(555)555-5555</p>
+    </div>
+</body>
+</html>

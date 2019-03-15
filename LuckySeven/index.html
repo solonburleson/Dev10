@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lucky Seven</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="text-center">
+        <h1 class="py-5">Lucky Sevens</h1>
+        <label for="bet" class="mx-3">Starting Bet:</label>
+        <span>$</span>
+        <input type="number" id="bet" name="bet" class="form-control col-1 d-inline-block" />
+        <p id="err" class="text-danger"></p>
+        <button onclick="luckySeven()" class="btn btn-primary d-block mx-auto">Play</button>
+    </div>
+    <hr />
+    <div id="results" class="d-none">
+        <h2 class="text-center py-3">Results</h2>
+        <table class="table table-bordered col-4 mx-auto">
+            <tr>
+                <td>Starting Bet</td>
+                <td id="start"></td>
+            </tr>
+            <tr>
+                <td>Total Rolls Before Going Broke</td>
+                <td id="total_rolls"></td>
+            </tr>
+            <tr>
+                <td>Highest Amount Won</td>
+                <td id="max"></td>
+            </tr>
+            <tr>
+                <td>Roll Count at Highest Amount Won</td>
+                <td id="max_rolls"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
