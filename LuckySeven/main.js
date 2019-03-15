@@ -1,13 +1,8 @@
 function luckySeven(){
     var bet = document.getElementById("bet").value
-    var bet_str = bet.toString();
-    console.log(bet_str)
+    bet = Math.floor(bet)
     if(bet <= 0){
         document.getElementById("err").innerHTML = "Bet must be greater than $0"
-        document.getElementById("results").className = "d-none"
-    }
-    else if(bet_str.includes(".")){
-        document.getElementById("err").innerHTML = "Bet must be a whole number"
         document.getElementById("results").className = "d-none"
     }
     else{
