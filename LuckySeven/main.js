@@ -13,17 +13,14 @@ function luckySeven(){
             'total_rolls': 0
         }
         while(bet > 0){
-            if(bet == dict['max']){
-                dict['rolls']++;
-            }
             var roll1 = rollDice();
             var roll2 = rollDice();
             dict['total_rolls']++;
             if(roll1+roll2 == 7){
                 bet += 4
-                if(bet > dict['max']){
+                if(bet >= dict['max']){
                     dict['max'] = bet;
-                    dict['rolls'] = 0;
+                    dict['rolls'] = dict['total_rolls'];
                 }
             }
             else{
